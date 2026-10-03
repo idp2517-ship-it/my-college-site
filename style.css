@@ -1,0 +1,194 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2457a6;
+    padding: 20px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2457a6;
+    margin: 10px 0;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #163d78;
+    border-radius: 5px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #2457a6;
+    border-bottom: 2px solid #2457a6;
+    padding-bottom: 8px;
+}
+
+/* Таблиця */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2457a6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eef4ff;
+}
+
+tr:hover {
+    background-color: #d6e5ff;
+}
+
+/* Список спеціальностей */
+
+ul {
+    list-style-type: square;
+    background-color: #eef4ff;
+    border: 1px solid #c5d7f5;
+    padding: 20px 40px;
+}
+
+li {
+    padding: 8px;
+}
+
+li:hover {
+    background-color: #d6e5ff;
+}
+
+/* Нумерований список */
+
+ol {
+    list-style-type: upper-roman;
+}
+
+/* Фото */
+
+figure {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    padding: 10px;
+}
+
+#about figure img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Галерея */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid figure {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid figure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Футер */
+
+footer {
+    text-align: center;
+    background-color: #2457a6;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Адаптація для телефону */
+
+@media (max-width: 700px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    section {
+        margin: 15px 0;
+    }
+}
